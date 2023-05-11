@@ -1,0 +1,28 @@
+html{
+    color:white;
+    background: rgb(186,198,255);
+background: radial-gradient(circle, rgba(186,198,255,1) 0%, rgba(245,0,50,1) 100%);
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.name{
+    font-size:15px;
+}
+.date{
+    font-size:5px;
+}
+.bodyText{
+    margin-top: 15px;
+    padding-left:20px;
+}
+.clear{
+    clear:both;
+}
+
+footer{
+    background-color: white;
+    color:rgb(226, 43, 101)
+}
