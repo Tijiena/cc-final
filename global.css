@@ -4,8 +4,28 @@ html{
 background: radial-gradient(circle, rgba(186,198,255,1) 0%, rgba(245,0,50,1) 100%);
 }
 
+body{
+    width:80%;
+     margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.event{
+    width:80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 .form{
     background-color: rgba(255, 255, 255, 0.4);
+    padding:1em;
+}
+
+.commentBox{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding:1em;
 }
 
 .name{
@@ -24,5 +44,6 @@ background: radial-gradient(circle, rgba(186,198,255,1) 0%, rgba(245,0,50,1) 100
 
 footer{
     background-color: white;
+    margin-top: 1em;
     color:rgb(226, 43, 101)
 }

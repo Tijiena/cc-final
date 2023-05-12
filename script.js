@@ -4,9 +4,15 @@ function render(data){
 }
 
 $(document).ready(function(){
-var comment=[
-    {"name":"Tina Zhang","date":Date(),"body":"Hello,everyone!"},
-];
+    var comment=[];
+
+    if(!localStorage.CommentData){
+        localStorage.CommentData=[];
+    }
+    else{
+        comment=JSON.parse(localStorage.CommentData);
+    }
+
     
 
 for(var i=0;i<comment.length;i++){
@@ -20,6 +26,10 @@ $('#addcomment').click(function(){
         "body":$('#bodyText').val(),
     };
     comment.push(addObj);
+    localStorage.CommentData=JSON.stringify(comment);
     render(addObj);
-})
+    $('#name').val('');
+    Date('');
+    $('#bodyText').val('');
+});
 });
